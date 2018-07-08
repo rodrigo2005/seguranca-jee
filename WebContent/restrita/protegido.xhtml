@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+ <h:body>
+ <h:form>
+ <h:outputText value="#{restrita.getDadosLogin()}"   />
+ <h:commandLink action="#{restrita.logout()}"  value="Sair" />
+ <hr/>
+ <br/>
+ 
+  <h:link value="Aplicativo-R" outcome="r/index" style="margin-right:10" rendered="#{restrita.isR}" />
+  <h:link value="Aplicativo-X" outcome="x/index" style="margin-right:10" rendered="#{restrita.isX}" />
+  <h:link value="Aplicativo-Y" outcome="y/index" style="margin-right:10" rendered="#{restrita.isY}" />
+ 
+<br/><br/>
+<br/>
+
+  <h:outputText value="Área protegida." />
+ 
+ </h:form> 
+ </h:body>
+</html>

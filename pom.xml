@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.sistema</groupId>
+	<artifactId>ldap</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Ldap</name>
+	<description>Exemplo de autenticação com ldap</description>
+
+
+
+	<dependencies>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-web-api</artifactId>
+			<version>6.0</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.1</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.1.1</version>
+				<configuration>
+					<!-- Java EE 6 não precisa mais do web.xml, caso não seja necessario 
+						descomentar a linha abaixo -->
+					<!-- <failOnMissingWebXml>false</failOnMissingWebXml> -->
+				</configuration>
+			</plugin>
+		</plugins>
+		<finalName>auth</finalName>
+	</build>
+
+
+</project>

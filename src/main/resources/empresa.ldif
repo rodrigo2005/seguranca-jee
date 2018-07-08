@@ -1,0 +1,163 @@
+version: 1
+
+dn: cn=FINANCEIRO,ou=grupos,o=matriz,dc=empresa,dc=com,dc=br
+objectClass: groupOfNames
+objectClass: top
+cn: FINANCEIRO
+member: cn=julia,ou=usuarios,o=matriz,dc=empresa,dc=com,dc=br
+
+dn: ou=grupos,o=matriz,dc=empresa,dc=com,dc=br
+objectClass: organizationalUnit
+objectClass: top
+ou: grupos
+
+dn: cn=julia,ou=usuarios,o=matriz,dc=empresa,dc=com,dc=br
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: Julia
+sn:: QXJhw7pqbw==
+uid: julia
+userPassword:: e1NTSEF9d0hjSjVYL0NDSHNFUXA4QStCT0FnaERKNkdsNzVzamVFWUNrWFE9P
+ Q==
+
+dn: cn=maria,ou=usuarios,o=filial_rj,dc=empresa,dc=com,dc=br
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: maria
+sn: santos
+uid: maria
+userPassword:: e1NTSEF9d3hMM2sxeEtIRFVLeXUvQ0w1NDVIQndpOGxXa1BOMVdEZ2MrZFE9P
+ Q==
+
+dn: cn=RH,ou=grupos,o=matriz,dc=empresa,dc=com,dc=br
+objectClass: groupOfNames
+objectClass: top
+cn: RH
+member: cn=rodrigo,ou=usuarios,o=matriz,dc=empresa,dc=com,dc=br
+
+dn: o=matriz,dc=empresa,dc=com,dc=br
+objectClass: organization
+objectClass: top
+o: matriz
+
+dn: o=filial_sp,dc=empresa,dc=com,dc=br
+objectClass: organization
+objectClass: top
+o: filial_sp
+
+dn: cn=CAIXAS,ou=grupos,o=matriz,dc=empresa,dc=com,dc=br
+objectClass: groupOfNames
+objectClass: top
+cn: CAIXAS
+member: cn=rhayana,ou=usuarios,o=filial_rj,dc=empresa,dc=com,dc=br
+
+dn: uid=admin,dc=empresa,dc=com,dc=br
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: tlsKeyInfo
+objectClass: top
+cn: system administrator
+keyAlgorithm: RSA
+privateKey:: MIIBUwIBADANBgkqhkiG9w0BAQEFAASCAT0wggE5AgEAAkEAkbtxrZpDU1S3Ncz
+ 4VFlB8eJQiwR58JD77fA66t9x1L6+US8bUUT8j9ewfo9B0QsciqJj9yRAlZ4QkBJDG4oLcwIDAQ
+ ABAkBi4uQyPnjstJFVCm5/Hcnnjf/FNRZhLKAmRlpUQaaGCpbCWWvD/KZGhT6FqbkEi+HEQMbfH
+ 0mD5CujkWrADcsRAiEA4kX8ASzEPnhZgSfVKRf+vk6LoyDkkGll5rDrVR5YH+UCIQCk4LPj3zaG
+ miBhIQEMs4osSfWZitXRqIrsqBPWsGLYdwIgGRqYnezAjQm/LGQl8xw1aBnAxkV09kyrQI/qXBQ
+ 0xL0CIAOLdTKj/Ocd7y5HaF9eiMz09hvL+VbdmccGwg5ukmF3AiBsigVxMQWRCQBcue6WtYQoWM
+ pozFT7aZgLLAAkx894qQ==
+privateKeyFormat: PKCS#8
+publicKey:: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAJG7ca2aQ1NUtzXM+FRZQfHiUIsEefCQ
+ ++3wOurfcdS+vlEvG1FE/I/XsH6PQdELHIqiY/ckQJWeEJASQxuKC3MCAwEAAQ==
+publicKeyFormat: X.509
+sn: administrator
+displayName: Directory Superuser
+uid: admin
+userCertificate:: MIIBejCCASQCBgFkdWpw2zANBgkqhkiG9w0BAQUFADBCMQswCQYDVQQGEw
+ JVUzEMMAoGA1UEChMDQVNGMRIwEAYDVQQLEwlEaXJlY3RvcnkxETAPBgNVBAMTCEFwYWNoZURTM
+ B4XDTE4MDcwNzE1NDQyN1oXDTE5MDcwNzE1NDQyN1owSTELMAkGA1UEBhMCVVMxDDAKBgNVBAoT
+ A0FTRjESMBAGA1UECxMJRGlyZWN0b3J5MRgwFgYDVQQDEw9ERVNLVE9QLTlTUks0QkswXDANBgk
+ qhkiG9w0BAQEFAANLADBIAkEAkbtxrZpDU1S3Ncz4VFlB8eJQiwR58JD77fA66t9x1L6+US8bUU
+ T8j9ewfo9B0QsciqJj9yRAlZ4QkBJDG4oLcwIDAQABMA0GCSqGSIb3DQEBBQUAA0EAMyGvX0Wjh
+ p1vvDqe6MFEAIDgMx71Fmlt44ILzbUtXEoDKKhK1mVvJHiMeC8VYgK4sG9C1NQ0pF3P9i/MziCD
+ Gw==
+userPassword:: e1NTSEF9ZGRnRXJzbnphQ0M2anVQRlU0d2o3QlFiS0prdnVhSU1FaEtsMGc9P
+ Q==
+
+dn: cn=APLICATIVO-X,ou=grupos,o=matriz,dc=empresa,dc=com,dc=br
+objectClass: groupOfNames
+objectClass: top
+cn: APLICATIVO-X
+member: cn=rhayana,ou=usuarios,o=filial_rj,dc=empresa,dc=com,dc=br
+member: cn=julia,ou=usuarios,o=matriz,dc=empresa,dc=com,dc=br
+
+dn: cn=APLICATIVO-Y,ou=grupos,o=matriz,dc=empresa,dc=com,dc=br
+objectClass: groupOfNames
+objectClass: top
+cn: APLICATIVO-Y
+member: cn=rodrigo,ou=usuarios,o=matriz,dc=empresa,dc=com,dc=br
+
+dn: cn=VENDAS,ou=grupos,o=filial_rj,dc=empresa,dc=com,dc=br
+objectClass: groupOfNames
+objectClass: top
+cn: VENDAS
+member: cn=maria,ou=usuarios,o=filial_rj,dc=empresa,dc=com,dc=br
+
+dn: cn=rhayana,ou=usuarios,o=filial_rj,dc=empresa,dc=com,dc=br
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: Rhayana
+sn:: QXJhw7pqbw==
+uid: rhayana
+userPassword:: e1NTSEF9QTIxSklVUlZoN0Rsa2c2YVh4Y2tCVlRVdHh4VFhhSEkvemZ6Tmc9P
+ Q==
+
+dn: cn=APLICATIVO-R,ou=grupos,o=filial_rj,dc=empresa,dc=com,dc=br
+objectClass: groupOfNames
+objectClass: top
+cn: APLICATIVO-R
+member: cn=rhayana,ou=usuarios,o=filial_rj,dc=empresa,dc=com,dc=br
+
+dn: cn=rodrigo,ou=usuarios,o=matriz,dc=empresa,dc=com,dc=br
+objectClass: organizationalPerson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: top
+cn: Rodrigo
+sn:: QXJhw7pqbw==
+mail: rodrigo@gmail.com
+uid: rodrigo
+userPassword:: e1NTSEF9elZka2JMbUZYaGtoRWJUZjNFZXdqbGxMak1hY3gzRWdycTh0WEE9P
+ Q==
+
+dn: ou=usuarios,o=filial_rj,dc=empresa,dc=com,dc=br
+objectClass: organizationalUnit
+objectClass: top
+ou: usuarios
+
+dn: dc=empresa,dc=com,dc=br
+objectclass: top
+objectclass: domain
+dc: empresa
+
+dn: ou=usuarios,o=matriz,dc=empresa,dc=com,dc=br
+objectClass: organizationalUnit
+objectClass: top
+ou: usuarios
+
+dn: o=filial_rj,dc=empresa,dc=com,dc=br
+objectClass: organization
+objectClass: top
+o: filial_rj
+
+dn: ou=grupos,o=filial_rj,dc=empresa,dc=com,dc=br
+objectClass: organizationalUnit
+objectClass: top
+ou: grupos
+

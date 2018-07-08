@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:body>
+
+  <h1><h:outputText value="LOGIN ::"  /></h1>
+  <hr/>
+  <br/>
+
+	 <h:link value="Home" outcome="index" />
+  	
+  	<h:link value="Área restrita" outcome="restrita/protegido" style="margin-left:10px;" />
+	<br/><br/>
+
+<h:form>
+ 
+  <h:panelGroup rendered="#{param['invalidLogin'] == 'true'}">
+   <h:outputText value="Por favor utilize credenciais autorizadas." />
+   <br/><br/>
+  </h:panelGroup>
+
+  <h:outputText value="Usuario: "/>
+  <h:inputText id="usuario" value="#{login.usuario}" required="true" />
+
+  <br/><br/>
+  
+  <h:outputText value="Senha: "/>
+  <h:inputSecret id="senha" feedback="false" value="#{login.senha}"  required="true"/>
+
+  <br/><br/>
+
+  <h:commandButton id="access_button" action="#{login.logar()}" value="Entrar"/>
+ 
+ </h:form>
+</h:body>
+</html>
