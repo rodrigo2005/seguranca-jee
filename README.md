@@ -47,17 +47,18 @@ No subsystem de security adicione as seguintes linhas dentro da tag <security-do
     </authentication>
 </security-domain>
 
+<br/>
 No subsystem de logging adicione as seguintes linhas junto com os demais loggers:
-
-<logger category="org.jboss.security">
-  <level name="TRACE"/>
-</logger>
-
+<br/>
+<logger category="org.jboss.security"><br/>
+  <level name="TRACE"/><br/>
+</logger><br/>
+<br/>
 Isso serve para sair mais logs no server.log para ajudar a identificar problemas, depois que estiver tudo funcionando, altere de TRACE para WARN.
-
+<br/>
 * Configure o seu projeto
 No seu projeto em src/main/webapp/WEB-INF crie um arquivo chamado jboss-web.xml com o seguinte conteúdo:
-
+<br/>
 <?xml version="1.0" encoding="UTF-8"?>
 <jboss-web>
     <security-domain>java:/jaas/ldap_security_domain</security-domain>
