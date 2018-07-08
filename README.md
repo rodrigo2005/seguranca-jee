@@ -48,13 +48,11 @@ No subsystem de security adicione as seguintes linhas dentro da tag <security-do
 </security-domain>
 
 No subsystem de logging adicione as seguintes linhas junto com os demais loggers:
-<pre><code>
-```
+<pre>
 <logger category="org.jboss.security">
   <level name="TRACE"/>
 </logger>
-```
-</pre></code>
+</pre>
     
     
 Isso serve para sair mais logs no server.log para ajudar a identificar problemas, depois que estiver tudo funcionando, altere de TRACE para WARN.
