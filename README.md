@@ -50,8 +50,8 @@ No subsystem de security adicione as seguintes linhas dentro da tag <security-do
 No subsystem de logging adicione as seguintes linhas junto com os demais loggers:
 <pre>
 <logger category="org.jboss.security">
-  <level name="TRACE"/>
-</logger>
+		  <level name="TRACE"/>
+		</logger>
 </pre>
     
     
