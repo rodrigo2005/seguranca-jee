@@ -1,4 +1,4 @@
-# seguranca-ldap-form
+# seguranca-ldap-programatica 
 
 ### No projeto na pasta resources tem as informações necessaris para configurar o projeto:
 
