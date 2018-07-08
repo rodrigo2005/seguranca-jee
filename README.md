@@ -1,5 +1,7 @@
 # seguranca-ldap-form
 
+### No projeto na pasta resources tem as informações necessaris para configurar o projeto:
+
 Versão do java neste exemplo: 1.6 <br/>
 Servidor: jboss-as-7.1.1.Final
 <br/>
